@@ -1,0 +1,137 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #f6f6f6;
+  background-color: #2f2f2f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.menubar {
+  margin: 0;
+  display: inline-flexbox;
+  flex-direction: row;
+  justify-content: center;
+  text-align: right;
+}
+
+.menubutton {
+  font-size: 12px; 
+  padding: 0.6em 1.2em;
+  margin: 4px;
+}
+
+.actions {
+  display: flex;
+  bottom: 5vh;
+  text-indent: 2vw;
+  position: absolute;
+  padding: 8vh 9vw;
+  flex-direction: column-reverse;
+  justify-content: left;
+  text-align: left;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: left;
+  text-align: left;
+
+}
+
+.settings-subdir {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: left;
+  text-align: left;
+  border-radius: 4px;
+  animation: fadeIn .2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.subdirbutton {
+  font-size: 1em;
+  padding: 0.2vh 1.2vw;
+  text-align: left;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.actionbutton {
+  font-size: 4em;
+  padding: 0.2vh 1.2vw;
+  text-align: left;
+}
+
+.subaction {
+  font-size: 2em;
+  padding: 1vh 1.2vw;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+input,
+button {
+  cursor: pointer;
+  transition: .75s;
+  border: none;
+  text-align: left;
+  background: transparent;
+  opacity: 70%;
+  font-family: inherit;
+  color: #f6f6f6;
+}
+
+button:hover {
+  opacity: 100%;
+  filter: drop-shadow(0 0 .8em white);
+}
+
+#greet-input {
+  margin-right: 5px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.patching-focus {
+  display: block;
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  font-family: inherit;
+  font-size: smaller;
+  color: #f6f6f6;
+  justify-content: center;
+}
+
+.patch-text {
+  display: flex;
+  text-align: left;
+  font-size: smaller;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
